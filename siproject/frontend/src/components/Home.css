@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* General Body Styling */
+
+.background-element {
+    background-image: url('welcome.png');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    position: fixed;
+}
+
+.img-element {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 20px auto; 
+}
+
+
+/* Container */
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 5%;
+}
+
+/* Section 1 Background */
+#section1 {
+    background-image: url('homezoo.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 664px;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .welcome-image {
+        width: 100%;
+        margin-top: -60px;
+        margin-bottom: 20px; /* ปรับระยะห่างระหว่าง welcome image และ carousel */
+        margin-left: 50px;
+    }
+    
+    .welcome-image img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .carousel-container {
+        position: relative;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      
+      .carousel img {
+        width: 100%;
+        height: auto;
+        display: none;
+      }
+      
+      .carousel img.active {
+        margin-top: -420px;
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        position: center;
+        size-adjust: 50px;
+
+      }
+      
+      .carousel-indicators {
+        margin-bottom: 50px;
+        text-align: center;
+      }
+      
+      .indicator {
+        height: 12px;
+        width: 12px;
+        margin: 0 5px;
+        background-color: #ccc;
+        border-radius: 50%;
+        display: inline-block;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      
+      .indicator.active {
+        background-color: #555;
+      }
+      
+}   
+#section2 {
+    background-image: url('dog.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 664px;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .container {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 5%;
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 columns */
+        grid-gap: 20px; /* Gap between images */
+        justify-items: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 268px; /* Ensure it matches the image size */
+        text-align: center;
+    }
+
+    .animal-image {
+        width: 268px; /* Adjust width */
+        height: 200px; /* Adjust height */
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    h3, p {
+        margin: 10px 0;
+    }
+
+    .see-all-btn {
+        background-color: #f38116db;
+        border-radius: 5px;
+        padding: 10px 20px;
+        margin-top: 20px;
+        font-size: 16px;
+        font-weight: bold;
+        border: 1px solid #ef960f;
+        text-align: center;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .see-all-btn:hover {
+        background-color: #31f064;
+        transform: translateY(-2px);
+    }
+}

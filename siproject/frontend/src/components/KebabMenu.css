@@ -1,0 +1,80 @@
+.kebab-menu-container {
+  position: relative;
+  display: inline-block;
+}
+
+.kebab-menu-btn {
+  color: black;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.kebab-menu-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.kebab-menu-item {
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  text-align: left;
+  width: 100%;
+  border-radius: 10px;
+  color: #000;
+}
+
+.kebab-menu-item:hover {
+  background-color: #f0f0f0;
+}
+
+/* Confirm Logout Modal */
+.confirm-logout-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.confirm-logout-modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.confirm-logout-buttons {
+  margin-top: 20px;
+}
+
+.confirm-btn,
+.cancel-btn {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.confirm-btn {
+  background-color: #fff;
+  color: #dc3545;
+  margin-left: -5px;
+}
+
+.cancel-btn {
+  background-color: #fff;
+  color: #959595;
+  margin-left: -5px;
+}

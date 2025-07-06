@@ -1,0 +1,113 @@
+/* Container for the animal page */
+.animal-page {
+    height: 1000px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+/* Buttons for Edit and Delete functionality */
+.edit-btn, .delete-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    padding: 8px;
+    margin: 5px;
+}
+
+.edit-btn:hover, .delete-btn:hover {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+/* FontAwesome icon styling for Edit and Delete buttons */
+.edit-btn .fa-edit, .delete-btn .fa-trash-alt {
+    margin-right: 8px;
+}
+
+/* Color of Edit button (Green) */
+.edit-btn {
+    color: #4CAF50; /* Green for Edit button */
+}
+
+/* Color of Delete button (Red) */
+.delete-btn {
+    color: #f44336; /* Red for Delete button */
+}
+
+/* Styling for the post button */
+.post-button {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+/* Styling for the add post button */
+.add-post-btn {
+  background-color: #b1b6b1;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-post-btn:hover {
+  background-color: #b1b6b1;
+}
+
+/* Modal content styling */
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 500px;
+  max-width: 100%;
+  position: relative;
+}
+
+/* Modal backdrop styling */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Close button in the modal */
+.modal-close {
+  margin-top: -50px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Body styling for the detail page */
+body, .detail-body {
+    height: 1000px;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    flex-wrap: wrap;
+}

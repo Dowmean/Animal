@@ -1,0 +1,121 @@
+/* src/components/Register.css */
+.register-body {
+  margin-top: 20px;
+  margin-left: 150px;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #87CEFA, #ffffff); /* ไล่สีจากฟ้าสู่ขาว */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-size: cover;
+  flex-wrap: wrap;
+}
+
+
+.register-container {
+  flex-wrap: wrap;
+  display: flex;
+  width: 80%;
+  max-width: 1000px;
+  background-color: #fff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.register-content {
+  display: flex;
+  width: 100%;
+}
+
+.register-left {
+  flex: 1;
+  padding: 50px;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.register-left h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.register-left p {
+  font-size: 14px;
+  color: #666;
+  margin-top: 0;
+}
+
+.register-left a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.register-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+
+.image-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 120px;
+  height: 120px;
+  z-index: 1;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.register-form {
+  width: 100%;
+  max-width: 300px;
+}
+
+.register-form input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #f8f9fa;
+}
+
+.register-form button {
+  width: 100%;
+  padding: 15px;
+  background-color: #4169E1;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.register-form button:hover {
+  background-color: #3a5cd1;
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 14px;
+  margin-top: 10px;
+}

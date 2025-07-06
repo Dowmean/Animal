@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&display=swap');
+
+.create-card {
+  max-width: 1000px;
+  margin: 10 auto;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* จัดรูปภาพและข้อมูลเบื้องต้นทางซ้าย, รายละเอียดทางขวา */
+  gap: 25px;
+  padding: 20px;
+}
+.card-header {
+  width: 100%;
+  text-align: left; /* จัดข้อความไปทางซ้าย */
+  margin-bottom: 10px; /* ระยะห่างจากรูปภาพ */
+}
+.kebab-menu {
+  /* Styles for the kebab menu itself */
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.kebab-menu svg {
+  /* If your KebabMenu uses an SVG icon */
+  width: 20px;
+  height: 20px;
+  fill: #333; /* Adjust color as needed */
+}
+
+
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* จัดตำแหน่งเนื้อหาด้านซ้าย */
+}
+
+.animal-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 20px; /* ปรับระยะห่างด้านล่าง */
+}
+
+
+
+.basic-info {
+  width: 100%;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: left;
+  
+}
+
+.basic-info h2 {
+  margin: 20px 0px 10px;
+  font-size: 25px;
+  .ibm-plex-sans-thai-thin {
+    font-family: "IBM Plex Sans Thai", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .ibm-plex-sans-thai-extralight {
+    font-family: "IBM Plex Sans Thai", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .ibm-plex-sans-thai-light {
+    font-family: "IBM Plex Sans Thai", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .ibm-plex-sans-thai-regular {
+    font-family: "IBM Plex Sans Thai", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .ibm-plex-sans-thai-medium {
+    font-family: "IBM Plex Sans Thai", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .ibm-plex-sans-thai-semibold {
+    font-family: "IBM Plex Sans Thai", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .ibm-plex-sans-thai-bold {
+    font-family: "IBM Plex Sans Thai", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+}
+
+.basic-info p {
+  .ibm-plex-sans-thai-thin {
+    font-family: "IBM Plex Sans Thai", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .ibm-plex-sans-thai-extralight {
+    font-family: "IBM Plex Sans Thai", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .ibm-plex-sans-thai-light {
+    font-family: "IBM Plex Sans Thai", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .ibm-plex-sans-thai-regular {
+    font-family: "IBM Plex Sans Thai", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .ibm-plex-sans-thai-medium {
+    font-family: "IBM Plex Sans Thai", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .ibm-plex-sans-thai-semibold {
+    font-family: "IBM Plex Sans Thai", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .ibm-plex-sans-thai-bold {
+    font-family: "IBM Plex Sans Thai", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  margin: 5px 0;
+  font-size: 16px;
+}
+.kebab-button {
+  background: none;
+  color: black;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  margin: 5px 0;
+  
+}
+
+.info-section {
+  display: grid;
+  margin-top: 80px;
+  grid-template-columns: 1fr 1fr; /* ปรับให้ข้อมูลอยู่ในตาราง */
+  gap: 20px;
+}
+
+
+.info-item h3 {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  margin-bottom: px;
+  color: #3498db;
+  margin-top: 0;
+}
+
+.icon {
+  margin-right: 10px;
+  font-size: 24px;
+}
+
+
+
+.animal-detail-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
+}
